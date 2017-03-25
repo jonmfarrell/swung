@@ -4,8 +4,8 @@ SWUNG
 
 This is a dating service for baseball fans!
 
-Tired of  relationship with poeple who don't understand America's Pasttime?
+Tired of  relationship with people who don't understand America's Pasttime?
 Exhausted with dating fans of your rival team?
-Then Swung is for you!  Suggests matches based on teams, players, and Baseball in general!
+Then Swung is for you!  Suggests matches based on Baseball in general!
 
 Created by Chris Daley, Jon Farrell, Nathan Burgess and John Williams for Boston Baseball Hackday 2017
