@@ -5,7 +5,12 @@
   <li>Least Favorite Team: <%= @user.least_favorite_team.name %></li>
 </ul>
 
-<button><%=link_to "Invite to a Date"%></button>
 
 
-<!-- TODO: CREATE DATE -->
+
+
+<%= form_for @new_outing do |f| %>
+  <%= f.hidden_field :first_user_id, value: @current_user.id %>
+  <%= f.hidden_field :second_user_id, value: @user.id %>
+  <%= f.submit "Invite to a Date", class: "btn btn-large btn-primary" %>
+<% end %>
