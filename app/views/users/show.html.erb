@@ -1,8 +1,11 @@
 <h1><%= @user.name %></h1>
 
 <ul>
-  <li>Favorite Team: <%= link_to @user.favorite_team.name, team_path(@user.favorite_team) %></li>
-  <li>Least Favorite Team: <%= link_to @user.least_favorite_team.name, team_path(@user.least_favorite_team) %></li>
+  <li>Favorite Team: <%= @user.favorite_team.name %></li>
+  <li>Least Favorite Team: <%= @user.least_favorite_team.name %></li>
 </ul>
+
+<button><%=link_to "Invite to a Date"%></button>
+
 
 <!-- TODO: CREATE DATE -->
