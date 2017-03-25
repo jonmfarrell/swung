@@ -6,6 +6,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    User.find(params[:id])
+    @user = User.find(params[:id])
+    # TODO: UPDATE to current WITH DEVISE
+    @current_user = User.first
+    @new_outing = Outing.new
   end
 end

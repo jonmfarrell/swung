@@ -17,40 +17,19 @@
     <div class="col-sm-9">
       <ul>
        <% @users.each do |user| %>
-          <li><%= link_to user.name, user_path(user) %></li>
+
+          <li class="baseball-card col-sm-4">
+            <div class="card">
+              <img src="/assets/img/match1.jpg">
+              <h3><%= user.name %>, <%=user.age %></h3>
+              <h4><%= user.favorite_team.name %> Fan</h4>
+              <%= link_to "View Profile", user_path(user),class: "view-profile" %>
+              <a class="request-date">Take me out to a ballgame</a>
+            </div>
+            <a class="add-to-collection">Add to collection</a>
+          </li>
+
         <% end %>
-        <li class="baseball-card col-sm-4">
-          <div class="card">
-            <img src="/assets/img/match1.jpg">
-            <h3>Sam O'Brien, 25</h3>
-            <h4>Boston Red Sox Fan</h4>
-            <a class="view-profile">View Profile</a>
-            <a class="request-date">Take me out to a ballgame</a>
-          </div>
-          <a class="add-to-collection">Add to collection</a>
-        </li>
-
-        <li class="baseball-card col-sm-4">
-          <div class="card">
-            <img src="/assets/img/match2.jpg">
-            <h3>Kondwani Joby , 20</h3>
-            <h4>Boston Red Sox Fan</h4>
-            <a class="view-profile">View Profile</a>
-            <a class="request-date">Take me out to a ballgame</a>
-          </div>
-          <a class="add-to-collection">Add to collection</a>
-        </li>
-
-        <li class="baseball-card col-sm-4">
-          <div class="card">
-            <img src="/assets/img/match3.jpg">
-            <h3>Vencel Aetius, 35</h3>
-            <h4>Boston Red Sox Fan</h4>
-            <a class="view-profile">View Profile</a>
-            <a class="request-date">Take me out to a ballgame</a>
-          </div>
-          <a class="add-to-collection">Add to collection</a>
-        </li>
 
       </ul>
     </div>
