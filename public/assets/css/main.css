@@ -24,10 +24,10 @@
 }
 
 .home .header {
-  background: url(/assets/img/ballpark.jpg);
+  background: url(/assets/img/header.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 600px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -60,16 +60,36 @@
   text-align: center;
 }
 
+.home .header input[type='submit']{
+  background: #169bd5;
+  border: none;
+  color: white;
+  padding-top: 10px;
+  height: 58px;
+}
+
 .home .header .left-form {
   position: absolute;
   bottom: 30px;
   left: 30px;
+  z-index: 100;
 }
 
 .home .header .right-form {
   position: absolute;
   bottom: 30px;
   right: 30px;
+}
+
+.home .header .right-form input[type='submit']{
+  margin-top: 20px;
+}
+
+.home .header p.tip {
+  text-align: left;
+  opacity: .8;
+  font-weight: 100;
+  padding-top: 6px;
 }
 
 .home .main {
@@ -79,6 +99,11 @@
 
 .home .card {
   min-height: 300px;
+  padding: 30px;
+}
+
+.home .card .align-right {
+  text-align: right;
 }
 
 .home .kisscam-container {
