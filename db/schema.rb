@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325184202) do
+ActiveRecord::Schema.define(version: 20170325190440) do
 
   create_table "genders", force: :cascade do |t|
     t.string   "name",       null: false
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20170325184202) do
     t.integer  "age"
     t.float    "latitude"
     t.float    "longitude"
+    t.string   "profile_image"
   end
 
 end
