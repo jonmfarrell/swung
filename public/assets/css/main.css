@@ -133,7 +133,7 @@
   padding-bottom: 16px;
   margin-left: 8px;
   margin-right: 8px;
-  width: calc(33% - 16px);  
+  width: calc(33% - 16px);
 }
 
 .dashboard .baseball-card img {
@@ -151,7 +151,7 @@
   font-size: 15px;
 }
 
-.dashboard .baseball-card .card button {
+.dashboard .baseball-card .card a {
   width: calc(50% - 20px);
   margin: 10px;
   float: left;
@@ -160,12 +160,35 @@
   min-height: 70px;
   padding: 7px;
   border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  color: black;
 }
 
-.dashboard .baseball-card .add-to-collection {
+.dashboard .baseball-card a.add-to-collection {
   width: calc(100% - 20px);
   border-radius: 2px;
   background: white;
   border: 1px solid black;
   margin: 10px;
+  display: inline-block;
+  text-align: center;
+  color: black;
+}
+
+.dashboard .profile .profile-left img{
+  width: 100%;
+  height: auto;
+}
+
+.dashboard .profile .profile-right {
+  padding-top: 66px;
+}
+
+.dashboard .profile .profile-right li {
+  list-style: none;
+}
+
+.dashboard .profile .profile-right li span {
+  font-weight: 900;
 }
