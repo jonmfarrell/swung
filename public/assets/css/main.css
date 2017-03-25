@@ -37,7 +37,7 @@
 .home .header .filter {
   width: 100%;
   height: 100%;
-  opacity: .25;
+  opacity: .0;
   background: black;
   position: absolute;
   top: 0;
@@ -100,6 +100,17 @@
 .home .card {
   min-height: 300px;
   padding: 30px;
+  border-bottom: 1px solid #aaa;
+}
+
+.home .card .hero {
+  width: 100%;
+  height: auto;
+}
+
+.home .card h1 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .home .card .align-right {
@@ -112,21 +123,21 @@
 
 .home .kisscam.one{
   min-height: 500px;
-  background: url(/assets/img/couple1.jpg);
+  background: url(/assets/img/swung_stock_1.png);
   background-size: cover;
   background-position: left center;
 }
 
 .home .kisscam.two {
   min-height: 500px;
-  background: url(/assets/img/couple2.jpg);
+  background: url(/assets/img/swung_stock_2.png);
   background-size: cover;
   background-position: center;
 }
 
 .home .kisscam.three {
   min-height: 500px;
-  background: url(/assets/img/couple3.jpg);
+  background: url(/assets/img/swung_stock_3.png);
   background-size: cover;
   background-position: center;
 }
