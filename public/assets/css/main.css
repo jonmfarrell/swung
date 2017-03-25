@@ -146,6 +146,18 @@
   background-position: center;
 }
 
+.footer {
+  border-top: 1px solid #222;
+}
+.footer li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer .social li img{
+  width: 30px;
+}
+
 /* DASHBOARD PAGE */
 
 .dashboard .header {
