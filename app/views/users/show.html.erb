@@ -17,7 +17,7 @@
     <div class="col-sm-9 profile">
       <div class="col-sm-6 profile-left">
         <h1><%= @user.name %></h1>
-        <img src="/assets/img/match1.jpg">
+        <%=image_tag(@user.profile_image) %>
       </div>
       <div class="col-sm-6 profile-right">
         <ul>
