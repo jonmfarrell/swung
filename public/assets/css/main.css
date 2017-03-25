@@ -148,6 +148,7 @@
 
 .footer {
   border-top: 1px solid #222;
+  background: #a2daff;
 }
 .footer li {
   list-style: none;
@@ -158,11 +159,19 @@
   width: 30px;
 }
 
+.footer .down {
+  padding-top: 22px;
+}
+
 /* DASHBOARD PAGE */
+
+.dashboard {
+    min-height: 700px;
+}
 
 .dashboard .header {
   min-height: 60px;
-  background-color: #e7e7e7;
+  background-color: #a2daff;
   border-bottom: 2px solid #333
 }
 
@@ -186,6 +195,7 @@
   margin-left: 8px;
   margin-right: 8px;
   width: calc(33% - 16px);
+  background: #ffffdd;
 }
 
 .dashboard .baseball-card img {
@@ -203,7 +213,7 @@
   font-size: 15px;
 }
 
-.dashboard .baseball-card .card a {
+.dashboard .baseball-card .card a, .dashboard .baseball-card .card input[type='submit'] {
   width: calc(50% - 20px);
   margin: 10px;
   float: left;
@@ -215,6 +225,14 @@
   display: inline-block;
   text-align: center;
   color: black;
+}
+
+.dashboard .baseball-card .card input[type='submit'] {
+  background: #ffccf2;
+}
+
+.dashboard .baseball-card .card a {
+  padding-top: 25px;
 }
 
 .dashboard .baseball-card a.add-to-collection {
