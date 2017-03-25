@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-
+# used to geolocate users
+# from https://github.com/alexreisner/geocoder
+gem 'geocoder' 
 gem 'pry-rails'
 gem "awesome_print"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
