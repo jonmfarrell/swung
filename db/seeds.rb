@@ -12,6 +12,9 @@
 
 ["Man", "Woman", "Gender Queer"].each{|gender| Gender.find_or_create_by(name: gender)}
 
-User.find_or_create_by(name: "Bob", gender_id: 1)
-User.find_or_create_by(name: "Jane", gender_id: 2)
-User.find_or_create_by(name: "Sam", gender_id: 3)
+Team.find_or_create_by(name: "Boston Red Sox")
+Team.find_or_create_by(name: "New York Yankees")
+
+User.find_or_create_by(name: "Bob", gender_id: 1, favorite_team_id: 1, least_favorite_team_id: 2)
+User.find_or_create_by(name: "Jane", gender_id: 2, favorite_team_id: 2, least_favorite_team_id: 1)
+User.find_or_create_by(name: "Sam", gender_id: 3, favorite_team_id: 1, least_favorite_team_id: 2)

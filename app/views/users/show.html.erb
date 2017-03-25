@@ -1,4 +1,3 @@
-
 <div class="wrapper">
   <div class="dashboard">
     <div class="header">
@@ -26,6 +25,14 @@
           <li><span>Least Favorite Team:</span> <%= @user.least_favorite_team.name %></li>
         </ul>
       </div>
+
+      <%= form_for @new_outing do |f| %>
+        <%= f.hidden_field :first_user_id, value: @current_user.id %>
+        <%= f.hidden_field :second_user_id, value: @user.id %>
+        <%= f.submit "Invite to a Date", class: "btn btn-large btn-primary" %>
+      <% end %>
+
+
       <!-- TODO: CREATE DATE -->
 
     </div>
