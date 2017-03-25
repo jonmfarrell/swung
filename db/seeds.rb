@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+
+# TODO: SEED GENDERS
+
+["Man", "Woman", "Gender Queer"].each{|gender| Gender.create(name: gender)}
