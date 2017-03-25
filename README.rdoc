@@ -1,28 +1,11 @@
-== README
+SWUNG
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"A place for singles to become doubles"
 
-Things you may want to cover:
+This is a dating service for baseball fans!
 
-* Ruby version
+Tired of  relationship with poeple who don't understand America's Pasttime?
+Exhausted with dating fans of your rival team?
+Then Swung is for you!  Suggests matches based on teams, players, and Baseball in general!
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Created by Chris Daley, Jon Farrell, Nathan Burgess and John Williams for Boston Baseball Hackday 2017
