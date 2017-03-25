@@ -1,8 +1,33 @@
-<h1><%= @user.name %></h1>
 
-<ul>
-  <li>Favorite Team: <%= link_to @user.favorite_team.name, team_path(@user.favorite_team) %></li>
-  <li>Least Favorite Team: <%= link_to @user.least_favorite_team.name, team_path(@user.least_favorite_team) %></li>
-</ul>
+<div class="wrapper">
+  <div class="dashboard">
+    <div class="header">
+      <p><img src="/assets/img/profile.jpg" class="profile-pic"/>
+      <span>Hey, Joe. We found some prospects for you. Check them out!</span></p>
+    </div>
+    <div class="col-sm-3">
+      <ul class="nav">
+        <li><a href="/users">Dashboard</a></li>
+        <li><a href="/users">Scout Prospects</a></li>
+        <li><a href="/users">Baseball Cards</a></li>
+        <li><a href="/users">Dating Preferences</a></li>
+        <li><a href="/users">Edit Profile</a></li>
+        <li><a href="/users">Account Settings</a></li>
+      </ul>
+    </div>
+    <div class="col-sm-9 profile">
+      <div class="col-sm-6 profile-left">
+        <h1><%= @user.name %></h1>
+        <img src="/assets/img/match1.jpg">
+      </div>
+      <div class="col-sm-6 profile-right">
+        <ul>
+          <li><span>Favorite Team:</span> <%= @user.favorite_team.name %></li>
+          <li><span>Least Favorite Team:</span> <%= @user.least_favorite_team.name %></li>
+        </ul>
+      </div>
+      <!-- TODO: CREATE DATE -->
 
-<!-- TODO: CREATE DATE -->
+    </div>
+  </div>
+</div>
