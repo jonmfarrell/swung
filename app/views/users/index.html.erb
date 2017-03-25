@@ -19,14 +19,39 @@
        <% @users.each do |user| %>
           <li><%= link_to user.name, user_path(user) %></li>
         <% end %>
-        <li class="baseball-card">
-          <img src="/assets/img/match1.jpg">
-          <h3>Sam O'Brien, 25</h3>
-          <h4>Boston Red Sox Fan</h4>
-          <a class="view-profile">View Profile</a>
-          <a class="request-date">Take me out to the ballgame</a>
+        <li class="baseball-card col-sm-4">
+          <div class="card">
+            <img src="/assets/img/match1.jpg">
+            <h3>Sam O'Brien, 25</h3>
+            <h4>Boston Red Sox Fan</h4>
+            <button class="view-profile">View Profile</button>
+            <button class="request-date">Take me out to a ballgame</button>
+          </div>
+          <button class="add-to-collection">Add card to collection</button>
         </li>
-        <button class="add-to-collection">Add to collection</button>
+
+        <li class="baseball-card col-sm-4">
+          <div class="card">
+            <img src="/assets/img/match2.jpg">
+            <h3>Kondwani Joby , 20</h3>
+            <h4>Boston Red Sox Fan</h4>
+            <button class="view-profile">View Profile</button>
+            <button class="request-date">Take me out to a ballgame</button>
+          </div>
+          <button class="add-to-collection">Add card to collection</button>
+        </li>
+
+        <li class="baseball-card col-sm-4">
+          <div class="card">
+            <img src="/assets/img/match3.jpg">
+            <h3>Vencel Aetius, 35</h3>
+            <h4>Boston Red Sox Fan</h4>
+            <button class="view-profile">View Profile</button>
+            <button class="request-date">Take me out to a ballgame</button>
+          </div>
+          <button class="add-to-collection">Add to collection</button>
+        </li>
+
       </ul>
     </div>
   </div>
