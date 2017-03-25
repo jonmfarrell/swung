@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325154109) do
+ActiveRecord::Schema.define(version: 20170325155335) do
+
+  create_table "dates", force: :cascade do |t|
+    t.integer "date_number"
+    t.integer "history_id"
+  end
 
   create_table "genders", force: :cascade do |t|
     t.string   "name",       null: false
