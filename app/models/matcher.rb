@@ -2,7 +2,7 @@
 
 require "dbi"
 
-class matchMe
+class matchMe < ActiveRecord::Base
 
 	# the users being checked for matchability
 	# TODO: actually fetch them right because this is probably not gonna work
@@ -65,12 +65,12 @@ class matchMe
 
 	# IDEAL: are you an ideal match?
 	# Weights several values against each other to determine if you are a good match
-	# Weights: 
+	# Weights:
 	# Age: 1 point
 	# Geographic location:
 		# 2 points if you are in the ideal range ( <= 15 miles)
 		# 1 point if you are between the ideal range and the bound (15 to 50 miles, exclusively)
-	# Favorite team: 3 points 
+	# Favorite team: 3 points
 
 	def checkIdealAge(uOne, uTwo) # checks to see if users in the ideal range for age
 		if (ageLoIdeal <= uTwo.age <= ageHiIdeal)
@@ -78,7 +78,7 @@ class matchMe
 		end
 	end
 
-	def checkFavoriteTeam(uOne, uTwo) # checks to see if users have the same favorite team 
+	def checkFavoriteTeam(uOne, uTwo) # checks to see if users have the same favorite team
 		if uOne.favorite_team_id == uTwo.favorite_team_id
 			return matchPoints = matchPoints + 3
 		end
@@ -87,7 +87,7 @@ class matchMe
 	def checkLeastFavoriteTeam(uOne, uTwo) # checks to see if users dislike each others favorite team, or if users dislike the same team
 		if uOne.favorite_team_id == uTwo.least_favorite_team_id or uOne.least_favorite_team_id == uTwo.favorite_team_id
 			return matchPoints = matchPoints - 3
-		end 
+		end
 		if uOne.least_favorite_team_id == uTwo.least_favorite_team_id # "The enemy of my enemy is my future spouse"
 			return matchPoints = matchPoints + 2
 		end
@@ -110,7 +110,7 @@ class matchMe
 		end
 	end
 
-	
+
 	# run it!  This is the main of the program
 	if findMatch(userOne, userTwo) == true
 		print "match found!"
