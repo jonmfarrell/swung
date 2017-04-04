@@ -2,7 +2,7 @@
 
 require "dbi"
 
-class Matcher
+class matchMe
 
 	# the users being checked for matchability
 	# TODO: actually fetch them right because this is probably not gonna work
@@ -111,10 +111,10 @@ class Matcher
 	end
 
 
-	# # run it!  This is the main of the program
-	# if findMatch(userOne, userTwo) == true
-	# 	print "match found!"
-	# else
-	# 	print "no match found"
-	# end
+	# run it!  This is the main of the program
+	if findMatch(userOne, userTwo) == true
+		print "match found!"
+	else
+		print "no match found"
+	end
 end
