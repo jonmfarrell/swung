@@ -2,7 +2,7 @@
 
 require "dbi"
 
-class MatchMe
+class matchMe
 
 	# the users being checked for matchability
 	# TODO: actually fetch them right because this is probably not gonna work
