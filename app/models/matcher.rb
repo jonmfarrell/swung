@@ -2,7 +2,7 @@
 
 require "dbi"
 
-class matchMe
+class matchMe < ActiveRecord::Base
 
 	# the users being checked for matchability
 	# TODO: actually fetch them right because this is probably not gonna work
